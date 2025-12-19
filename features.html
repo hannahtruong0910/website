@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Features</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top nav-color">
+        <div class="container">
+            <img src="img/xyberon_logo.png" alt="" class="logo">
+            <a href="#" class="navbar-brand">Xyberon</a>
+            <button class="navbar-toggler mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="features.html" class="nav-link fw-bold nav-color">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="subscription.html" class="nav-link">Subscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="download.html" class="nav-link">Download</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Showcase-->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start nav-color">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Main <span class="text-warning">Features</span></h1>
+                    <p class="lead my-4">
+                        Xyberon delivers real‑time threat detection, secure data encryption, and smart privacy controls
+                        through a simple, easy‑to‑use dashboard.
+                    </p>
+                    <button class="btn btn-primary btn-lg mb-5" data-bs-toggle="modal"
+                        data-bs-target="#enroll">Subscribe now</button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block text-end" src="img/showcase.svg" alt="" />
+            </div>
+        </div>
+    </section>
+    <!--Image Carousel-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/threat-detection-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption position-absolute">
+                    <h5 class="fw-bold fs-2">Real-time Threat Protection</h5>
+                    <p>Continuously scans apps, downloads, and websites to detect and block malware, phishing attempts,
+                        and suspicious activity the moment they appear</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/The-Cost-of-Inadequate-Data-Encryption-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption position-absolute">
+                    <h5 class="fw-bold fs-2">Secure Cloud Backup and Recovery</h5>
+                    <p>Automatically encrypts and backs up important files to the cloud, so users can quickly restore
+                        their data if a device is lost, stolen, or infected</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/What-is-Cloud-to-Cloud-Backup-and-How-Is-It-Different.jpg" class="d-block w-100"
+                    alt="...">
+                <div class="carousel-caption position-absolute">
+                    <h5 class="fw-bold fs-2">Privacy and Identity Safeguards</h5>
+                    <p>Includes tools like app lock, password manager, Wi‑Fi security checks, and dark‑web monitoring to
+                        protect logins, personal data, and online activity across devices</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative nav-color">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2025 Xyberon</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+    <!--Modal-->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Subscription</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Fill out this form and we will get back to you</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">
+                                First Name:
+                            </label>
+                            <input type="text" class="form-control" id="first-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="col-form-label">
+                                Last Name:
+                            </label>
+                            <input type="text" class="form-control" id="last-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">
+                                Email:
+                            </label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="col-form-label">
+                                Phone:
+                            </label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
